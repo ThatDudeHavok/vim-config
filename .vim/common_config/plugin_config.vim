@@ -25,6 +25,7 @@
   Bundle "git://github.com/tpope/vim-repeat.git"
   Bundle "git://github.com/vim-scripts/ruby-matchit.git"
   Bundle "git://github.com/wgibbs/vim-irblack.git"
+Bundle 'rking/ag.vim'
 
 
 " Coffee script
@@ -34,9 +35,9 @@
 
 " ACK
   Bundle "git://github.com/mileszs/ack.vim.git"
-    nmap g/ :Ack!<space>
-    nmap g* :Ack! -w <C-R><C-W><space>
-    nmap ga :AckAdd!<space>
+    nmap g/ :Ag!<space>
+    nmap g* :Ag! -w <C-R><C-W><space>
+    nmap ga :AgAdd!<space>
     nmap gn :cnext<CR>
     nmap gp :cprev<CR>
     nmap gq :ccl<CR>
