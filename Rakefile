@@ -3,13 +3,13 @@ require 'rake'
 
 desc "symlink vim files"
 task :default do
-  symlink %w[ .vimrc .gvimrc .vim ]
+  symlink_custom %w( .vimrc .gvimrc .vim )
   # install vundle
-  system "git clone http://github.com/gmarik/vundle.git ~/.vim/vundle.git"
+  system "git clone git@github.com:gmarik/vundle.git ~/.vim/vundle.git"
 end
 
 
-def symlink(files)
+def symlink_custom(files)
   files.each do |file|
     case
       when file_identical?(file) then skip_identical_file(file)
