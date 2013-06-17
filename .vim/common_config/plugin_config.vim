@@ -25,8 +25,12 @@
   Bundle "git://github.com/tpope/vim-repeat.git"
   Bundle "git://github.com/vim-scripts/ruby-matchit.git"
   Bundle "git://github.com/wgibbs/vim-irblack.git"
-Bundle 'rking/ag.vim'
 
+  Bundle 'rking/ag.vim'
+  Bundle 'vim-scripts/change-hash-syntax'
+
+Bundle 'Lokaltog/vim-powerline'
+  let g:Powerline_symbols = 'fancy'
 
 " Coffee script
   Bundle "git://github.com/kchmck/vim-coffee-script.git"
@@ -46,6 +50,7 @@ Bundle 'rking/ag.vim'
 
 " Tagbar for navigation by tags using CTags
   Bundle "git://github.com/majutsushi/tagbar.git"
+    let g:tagbar_ctags_bin ="/opt/boxen/homebrew/bin/ctags"
     let g:tagbar_autofocus = 1
     map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
     map <Leader>. :TagbarToggle<CR>
@@ -114,7 +119,7 @@ Bundle 'rking/ag.vim'
 
     let g:fuf_keyOpenTabpage = '<D-CR>'
 
-    nmap <Leader>t :FufCoverageFile<CR>
+    nmap <Leader>t :FufFile<CR>
     nmap <Leader>b :FufBuffer<CR>
     nmap <Leader>f :FufRenewCache<CR>
     nmap <Leader>T :FufTagWithCursorWord!<CR>
@@ -179,3 +184,5 @@ Bundle 'rking/ag.vim'
     let g:surround_45 = "<% \r %>"
     " = to surround with output erb tag
     let g:surround_61 = "<%= \r %>"
+
+
