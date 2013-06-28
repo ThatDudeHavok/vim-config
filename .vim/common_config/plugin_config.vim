@@ -111,7 +111,7 @@ Bundle 'Lokaltog/vim-powerline'
 
 " Fuzzy finder for quickling opening files / buffers
   Bundle "git://github.com/clones/vim-fuzzyfinder.git"
-    let g:fuf_coveragefile_prompt = '>GoToFile[]>'
+    let g:fuf_coveragefile_prompt = 'OpenFile[]>'
     let g:fuf_coveragefile_exclude = '\v\~$|' .
     \                                '\.(o|exe|dll|bak|swp|log|sqlite3|png|gif|jpg)$|' .
     \                                '(^|[/\\])\.(hg|git|bzr|bundle)($|[/\\])|' .
@@ -119,7 +119,7 @@ Bundle 'Lokaltog/vim-powerline'
 
     let g:fuf_keyOpenTabpage = '<D-CR>'
 
-    nmap <Leader>t :FufFile<CR>
+    nmap <Leader>t :FufCoverageFile<CR>
     nmap <Leader>b :FufBuffer<CR>
     nmap <Leader>f :FufRenewCache<CR>
     nmap <Leader>T :FufTagWithCursorWord!<CR>
