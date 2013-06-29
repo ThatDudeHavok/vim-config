@@ -17,7 +17,6 @@
   Bundle "git://github.com/tpope/vim-rake.git"
   Bundle "git://github.com/vim-ruby/vim-ruby.git"
   Bundle "git://github.com/ervandew/supertab.git"
-  Bundle "git://github.com/tsaleh/vim-tcomment.git"
   Bundle "git://github.com/michaeljsmith/vim-indent-object.git"
   Bundle "git://github.com/mhz/vim-matchit.git"
   Bundle "git://github.com/kana/vim-textobj-user.git"
@@ -26,11 +25,11 @@
   Bundle "git://github.com/vim-scripts/ruby-matchit.git"
   Bundle "git://github.com/wgibbs/vim-irblack.git"
 
-  Bundle 'rking/ag.vim'
   Bundle 'vim-scripts/change-hash-syntax'
+  Bundle "git://github.com/tomtom/tcomment_vim.git"
 
-Bundle 'Lokaltog/vim-powerline'
-  let g:Powerline_symbols = 'fancy'
+  Bundle 'Lokaltog/vim-powerline'
+    let g:Powerline_symbols = 'fancy'
 
 " Coffee script
   Bundle "git://github.com/kchmck/vim-coffee-script.git"
@@ -38,7 +37,7 @@ Bundle 'Lokaltog/vim-powerline'
 
 
 " ACK
-  Bundle "git://github.com/mileszs/ack.vim.git"
+  Bundle 'git://github.com/rking/ag.vim'
     nmap g/ :Ag!<space>
     nmap g* :Ag! -w <C-R><C-W><space>
     nmap ga :AgAdd!<space>
